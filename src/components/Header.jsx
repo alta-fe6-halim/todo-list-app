@@ -3,6 +3,7 @@ import { styled, alpha } from '@mui/material/styles';
 import Toolbar from '@mui/material/Toolbar';
 import InputBase from '@mui/material/InputBase';
 import SearchIcon from '@mui/icons-material/Search';
+import { Link } from 'react-router-dom';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -49,7 +50,10 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function Header() {
     return (
-        <nav className='sticky text-black top-0 w-full p-4 bg-transparent backdrop-blur-sm flex flex-row justify-evenly'>Header
+        <nav className='sticky text-black top-0 w-full p-4 bg-white/10 backdrop-blur-sm flex flex-row justify-evenly'>
+            <Link to="/">
+                <div className='font-bold'> Home</div>
+            </Link>
             <Toolbar>
                 <Search>
                     <SearchIconWrapper>
