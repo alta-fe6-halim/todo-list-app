@@ -23,7 +23,7 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
 
     return todos.map((todo, index) => (
         <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
-            <div className='flex flex-row justify-between bg-gradient-to-b from-green-500 to-sky-900 shadow-md shadow-gray-500 mx-16 my-5 p-5 rounded-xl  overflow-auto'>
+            <div className='flex flex-row justify-between bg-gradient-to-b from-green-500 to-sky-900 shadow-md shadow-gray-500 md:w-96 lg:w-5/6 m-auto my-5 p-5 rounded-xl  overflow-auto'>
                 <div key={todo.id} onClick={() => completeTodo(todo.id)}>
                     {todo.text}
                 </div>

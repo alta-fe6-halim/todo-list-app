@@ -42,7 +42,7 @@ function TodoList() {
 
 
     return (
-        <div className='bg-black/30 text-white w-1/2 m-auto my-0 rounded-3xl p-10'>
+        <div className='bg-black/30 text-white lg:w-1/2 md:w-1/2 sm:w-60 m-auto my-0 rounded-3xl p-10'>
             <p className='font-bold text-xl text-center p-4'>What's your Plan today?</p>
             <TodoForm onSubmit={addTodo} />
             <Todo

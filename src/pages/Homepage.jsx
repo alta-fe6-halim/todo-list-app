@@ -2,6 +2,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react'
 import Layout from '../components/Layout'
+// import { Link } from 'react-router-dom'
 // import { withRouter } from '../utils/navigation';
 // import Main from '../components/Main';
 
@@ -46,10 +47,12 @@ const Homepage = () => {
                         )
                     })}
                 </div>
-            </Layout>
+            </Layout >
         )
     }
 }
 
 // export default withRouter(Homepage)
 export default Homepage
+
+

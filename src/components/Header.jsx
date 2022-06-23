@@ -50,9 +50,9 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function Header() {
     return (
-        <nav className='sticky text-black top-0 w-full px-14 pt-3 bg-white/5 backdrop-blur-sm flex flex-row justify-between'>
+        <nav className='sticky text-black top-0 w-full sm:px-4 md:px-0 lg:px-0 pt-3 bg-white/5 backdrop-blur-sm flex flex-row justify-around'>
             <Link to="/">
-                <div className='font-bold text-4xl'>mytodo🤍</div>
+                <div className='font-bold text-md md:text-4xl lg:text-4xl'>mytodo🤍</div>
             </Link>
             <Toolbar>
                 <Search>
@@ -62,7 +62,7 @@ function Header() {
                     <StyledInputBase
                         placeholder="Search…"
                         inputProps={{ 'aria-label': 'search' }}
-                        className='w-96'
+                        className=' lg:w-96 md:w-72 sm:w-34'
                     />
                 </Search>
             </Toolbar>

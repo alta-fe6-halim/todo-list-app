@@ -30,7 +30,7 @@ function TodoForm(props) {
                 type='text'
                 placeholder=' Add a new task'
                 value={input}
-                className='todo-input bg-gradient-to-b from-sky-800 to-gray-900 text-white p-2 rounded-lg border-2 border-gray-400 w-96 mx-2'
+                className='todo-input bg-gradient-to-b from-sky-800 to-gray-900 text-white p-2 rounded-lg border-2 border-gray-400 lg:w-96 md:w-36 sm:w-36 mx-2'
                 onChange={handleChange}
                 ref={inputRef}
             />
