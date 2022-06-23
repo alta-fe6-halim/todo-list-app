@@ -28,13 +28,13 @@ function TodoForm(props) {
         <form className='todo-form text-center' onSubmit={handleSubmit}>
             <input
                 type='text'
-                placeholder='Add a todo'
+                placeholder=' Add a new task'
                 value={input}
-                className='todo-input  bg-slate-900 text-white p-2 rounded-xl border-2 border-green-400 w-96'
+                className='todo-input bg-gradient-to-b from-sky-800 to-gray-900 text-white p-2 rounded-lg border-2 border-gray-400 w-96 mx-2'
                 onChange={handleChange}
                 ref={inputRef}
             />
-            <button className='todo-button bg-gradient-to-b from-gray-500 to-black p-2 px-6 rounded-md shadow-sm shadow-gray-100'>Add</button>
+            <button className='todo-button bg-gradient-to-b from-green-500 to-sky-900 p-2 px-5 rounded-md shadow-sm shadow-gray-200'>Add Todo</button>
         </form>
     )
 }

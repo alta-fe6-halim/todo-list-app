@@ -22,9 +22,9 @@ function Todo({ todos, completeTodo, removeTodo, updateTodo }) {
     }
 
     return todos.map((todo, index) => (
-        <div className=''>
-            <div className='flex flex-row justify-between bg-slate-900 shadow-sm shadow-gray-700 m-5 p-5 rounded-xl overflow-auto' >
-                <div key={todo.id}>
+        <div className={todo.isComplete ? 'todo-row complete' : 'todo-row'} key={index}>
+            <div className='flex flex-row justify-between bg-gradient-to-b from-green-500 to-sky-900 shadow-md shadow-gray-500 mx-16 my-5 p-5 rounded-xl  overflow-auto'>
+                <div key={todo.id} onClick={() => completeTodo(todo.id)}>
                     {todo.text}
                 </div>
                 <div className='icons'>

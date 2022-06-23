@@ -26,8 +26,8 @@ function TodoList() {
     const removeTodo = id => {
         const removeArr = [...todos].filter(todo => todo.id !== id)
 
-        setTodos(removeArr)
-    }
+        setTodos(removeArr);
+    };
 
 
     const completeTodo = id => {
@@ -42,8 +42,8 @@ function TodoList() {
 
 
     return (
-        <div className='bg-gradient-to-b from-red-700 via-yellow-500 to-green-700 text-white w-1/2 m-auto my-0 rounded-sm p-10'>
-            <p className='font-bold text-xl text-center p-4'>What's the Plan for Today?</p>
+        <div className='bg-black/30 text-white w-1/2 m-auto my-0 rounded-3xl p-10'>
+            <p className='font-bold text-xl text-center p-4'>What's your Plan today?</p>
             <TodoForm onSubmit={addTodo} />
             <Todo
                 todos={todos}

@@ -5,9 +5,12 @@ import Button from './Button';
 function Main() {
     return (
         <div className='grid grid-cols-4 h-screen'>
-            <div className=' bg-gray-200 text-center'>todo
+            <div className='bg-black/5 text-center'>
+                <p className='bg-white/5 font-bold'>
+                    Today
+                </p>
             </div>
-            <div className='col-span-3 bg-slate-400 text-center' >
+            <div className='col-span-3 text-center' >
                 <Link to="/detail">
                     <Button />
                     <Button />
